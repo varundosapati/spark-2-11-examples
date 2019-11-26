@@ -1,0 +1,9 @@
+.settings
+.cache-main
+.cache-tests
+.project
+.classpath
+/bin/
+/testdata/databricks/output
+/testdata/usconsesus
+/target/
