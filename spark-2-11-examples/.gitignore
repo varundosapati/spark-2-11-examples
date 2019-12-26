@@ -7,4 +7,5 @@
 /testdata/databricks/output
 /testdata/hadoopexam/output
 /testdata/usconsesus
+/testdata/ml/slackProcessing/output
 /target/
