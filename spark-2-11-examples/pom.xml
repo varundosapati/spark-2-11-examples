@@ -13,7 +13,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <scala-tool-version>2.11</scala-tool-version>
-    <spark.version>2.3.1</spark.version>
+    <spark.version>2.3.0</spark.version>
   </properties>
 
   <dependencies>
@@ -42,7 +42,44 @@
 		    <artifactId>spark-streaming_${scala-tool-version}</artifactId>
             <version>${spark.version}</version>
 		</dependency>
+		
+		<!-- Spark Mlib -->
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-mllib_${scala-tool-version}</artifactId>
+			<version>${spark.version}</version>
+		</dependency>
 
+		<!-- Spark Mlib linalg -->
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-mllib-local_${scala-tool-version}</artifactId>
+			<version>${spark.version}</version>
+		</dependency>
+		
+		<!-- jcommander is used for parsing arguments -->
+		<dependency>
+			<groupId>com.beust</groupId>
+			<artifactId>jcommander</artifactId>
+			<version>1.78</version>
+		</dependency>
+	
+		<!-- scalaaj is used for Http client -->
+		<dependency>
+			<groupId>org.scalaj</groupId>
+			<artifactId>scalaj-http_${scala-tool-version}</artifactId>
+			<version>${spark.version}</version>
+		</dependency>
+		
+		<!--  A simple web socket for scala right now using for slack procerssing  -->
+		<dependency>
+			<groupId>org.jfarcand</groupId>
+			<artifactId>wcs</artifactId>
+			<version>1.5</version>
+		</dependency>
+		
+
+		
 	 <dependency> <!-- Jetty demmo -->
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-client</artifactId>
