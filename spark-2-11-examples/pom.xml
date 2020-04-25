@@ -103,6 +103,32 @@
 		
 		<!-- Kafka Configuration -->
 		
+		<!--  Twitter Configuration -->
+		
+		<!-- https://mvnrepository.com/artifact/org.twitter4j/twitter4j-core -->
+		<dependency>
+		    <groupId>org.twitter4j</groupId>
+		    <artifactId>twitter4j-core</artifactId>
+		    <version>4.0.4</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.twitter4j/twitter4j-stream -->
+		<dependency>
+		    <groupId>org.twitter4j</groupId>
+		    <artifactId>twitter4j-stream</artifactId>
+		    <version>4.0.4</version>
+		</dependency>
+			
+		<!-- Used by populaHashTag for TwitterUtils -->	
+		<!-- https://mvnrepository.com/artifact/org.apache.bahir/spark-streaming-twitter -->
+		<dependency>
+		    <groupId>org.apache.bahir</groupId>
+		    <artifactId>spark-streaming-twitter_${scala-tool-version}</artifactId>
+		    <version>${spark.version}</version>
+		</dependency>
+		
+		
+		<!--  Twitter Configuration -->		
 	 <dependency> <!-- Jetty demmo -->
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-client</artifactId>
