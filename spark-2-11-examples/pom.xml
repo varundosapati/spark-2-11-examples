@@ -128,7 +128,25 @@
 		</dependency>
 		
 		
-		<!--  Twitter Configuration -->		
+		<!--  Twitter Configuration -->	
+		
+		<!-- NLP Configuration -->
+		
+		<!-- https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-corenlp -->
+		<dependency>
+		    <groupId>edu.stanford.nlp</groupId>
+		    <artifactId>stanford-corenlp</artifactId>
+		    <version>3.4</version>
+		</dependency>
+		<dependency>
+	      <groupId>edu.stanford.nlp</groupId>
+	      <artifactId>stanford-corenlp</artifactId>
+	      <version>3.4</version>
+	      <classifier>models</classifier>
+	      
+	    </dependency>
+		<!-- NLP Configuration -->		
+			
 	 <dependency> <!-- Jetty demmo -->
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-client</artifactId>
